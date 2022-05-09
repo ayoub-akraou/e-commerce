@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navigation {
+    @apply px-8 py-4 flex justify-between items-center  text-white;
+  }
+  .icon-menu {
+    @apply w-10 h-10 fill-white z-40 cursor-pointer;
+  }
+  .menu {
+    @apply transition-transform duration-500 py-4 fixed flex flex-col  gap-20 top-0 left-0 w-full h-screen bg-white z-40;
+  }
+  .menu .box {
+    @apply flex justify-end items-center gap-1;
+  }
+  .tags {
+    @apply flex flex-col gap-12 mx-auto w-full max-w-[calc(100%-6rem)] text-[2.4rem];
+  }
+  .filters {
+    @apply sticky -top-[.7px] left-0 z-30 bg-white flex justify-center items-center px-2;
+  }
+  .filter__btn {
+    @apply transition-colors duration-500 cursor-pointer text-gray-500 uppercase font-semibold bg-gray-100 flex-1 py-2 shadow-md border-solid border-gray-500 border-[1px] text-[1.4rem];
+  }
+  .filter__btn--active {
+    @apply text-white bg-gray-500;
+  }
+  .product {
+    @apply duration-1000 transition-opacity;
+  }
+  .image {
+    @apply relative overflow-hidden;
+  }
+  .image img {
+    @apply w-full h-[15rem] object-cover hover:scale-110 transition-transform duration-500;
+  }
+  .icon__heart--bg {
+    @apply cursor-pointer shadow-md w-[3.5rem] h-[3.5rem] pl-1 pt-2 absolute right-4 bottom-2  rounded-full bg-white/80 flex;
+  }
+  .icon-heart {
+    @apply w-1 h-1 stroke-black/75  scale-[10] m-auto;
+  }
+  .product__description {
+    @apply before:text-right before:absolute before:bottom-0 before:right-0 before:w-14 before:h-1/2 before:bg-gradient-to-r before:from-white/60 before:to-white relative h-[calc((1.2rem)*3+.75rem)] text-ellipsis leading-relaxed overflow-hidden text-[1.2rem] py-2;
+  }
+  .product__price {
+    @apply text-[1.6rem] text-gray-600 font-semibold;
+  }
+  .currency {
+    @apply text-[1.2rem] font-medium text-gray-800;
+  }
+  .logo {
+    @apply font-bold font-[Cinzel,serif];
+  }
+}
