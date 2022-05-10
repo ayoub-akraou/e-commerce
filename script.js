@@ -306,8 +306,6 @@ products.addEventListener("click", function (e) {
         displayWideVue(x);
       }
     });
-  } else {
-    console.log("no");
   }
 });
-displayWideVue(arrProducts[2]);
+
