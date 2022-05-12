@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="text-[62.5%]" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>e-commerce</title>
+  </head>
+  <body class="font-['Rubik',sans-serif] min-h-screen flex flex-col">
+    <header class="">
+      <nav class="bg-slate-800">
+        <div class="navigation container mx-auto">
+          <p class="logo text-[2.4rem]">ak-store</p>
+          <svg
+            class="icon-menu"
+            fill="#000000"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+          >
+            <path
+              d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z"
+            />
+          </svg>
+        </div>
+      </nav>
+      <aside class="menu translate-x-full">
+        <div
+          class="box container w-full pl-16 pr-4 border-b-[2px] border-b-gray-200"
+        >
+          <p class="logo mx-auto text-[3rem]">ak-store</p>
+          <?xml
+          version="1.0" encoding="iso-8859-1"?>
+          <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            class="icon-close cursor-pointer w-8 h-8"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 371.23 371.23"
+            style="enable-background: new 0 0 371.23 371.23"
+            xml:space="preserve"
+          >
+            <polygon
+              points="371.23,21.213 350.018,0 185.615,164.402 21.213,0 0,21.213 164.402,185.615 0,350.018 21.213,371.23 
+            185.615,206.828 350.018,371.23 371.23,350.018 206.828,185.615 "
+            />
+          </svg>
+        </div>
+        <ul class="tags container">
+          <li class="tag-container">
+            <button class="tag bg-[url('../images/all.jpg')]">ALL</button>
+          </li>
+          <li class="tag-container">
+            <button class="tag bg-[url('../images/t-shirts.jpg')]">
+              T-SHIRTS
+            </button>
+          </li>
+          <li class="tag-container">
+            <button class="tag bg-[url('../images/hoodies.jpg')]">
+              HOODIES
+            </button>
+          </li>
+          <li class="tag-container">
+            <button class="tag bg-[url('../images/watches.jpg')]">
+              WATCHS
+            </button>
+          </li>
+        </ul>
+      </aside>
+      <h1
+        class="title container mx-auto px-6 pt-12 pb-8 text-center text-[2.2rem] font-bold text-gray-800 bg-gray-50 tracking-widest"
+      >
+        Hoodies & Sweatshirts for Men
+      </h1>
+    </header>
+    <main class="bg-white flex-1">
+      <div class="filters container mx-auto">
+        <button class="filter__btn filter__btn--active">All</button>
+        <button class="filter__btn">T-shirts</button>
+        <button class="filter__btn">Hoodies</button>
+        <button class="filter__btn">watchs</button>
+      </div>
+      <div class="products grid grid-cols-2 gap-x-6 gap-y-10 px-6 py-10"></div>
+    </main>
+    <footer class="bg-gray-100">
+      <div
+        class="container mx-auto p-6 text-[1.2rem] text-gray-800 flex justify-between"
+      >
+        <p class="copy-right">&copy; 2022 <span class="logo">ak-store</span></p>
+        <p class="creator">
+          Created by:
+          <a
+            target="_blank"
+            class="inline-block text-blue-800 border-b-[1px] border-b-current border-solid"
+            href="https://www.linkedin.com/in/ayoub-akraou-051a431a8/"
+          >
+            Mr. AKRAOU</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
