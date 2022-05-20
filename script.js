@@ -314,7 +314,7 @@ function displayWideVue(product) {
   });
   // slider functionnality
   const slider = document.querySelector(".product__images");
-  slider.addEventListener("mouseenter", function () {
+  slider.addEventListener("scroll", function () {
     const bullets = document.querySelectorAll(".bullet");
     const images = document.querySelectorAll(".product__images img");
     images.forEach((x) => {
